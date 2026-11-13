@@ -5,4 +5,12 @@ function calcularTotal(precio, descuento) {
   return precio - descuento;
 }
 
-module.exports = { calcularTotal };
+function calcularPrecioFinal(precio, tipoCliente){
+  const descuento = tipoCliente == "estudiante"
+  ? precio * 0.15
+  : 0;
+
+  return calcularTotal(precio, descuento);
+}
+
+module.exports = { calcularTotal, calcularPrecioFinal };
