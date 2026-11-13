@@ -193,7 +193,7 @@ Por ejemplo, agrega una breve descripción del sistema en la siguiente sección:
 
 Escribe aquí una descripción breve del sistema:
 
-> Respuesta del estudiante: ...
+> Respuesta del estudiante: Sistema que calcula el precio final de un producto según el tipo de cliente, aplicando un descuento del 15% a estudiantes.
 
 Luego realice un commit:
 
