@@ -274,43 +274,43 @@ Responda las siguientes preguntas directamente en este archivo `README.md`.
 
 ### 1. ¿Cuál es la diferencia entre `main` y `develop` en Git-flow?
 
-Respuesta:
+Respuesta: `main` contiene las versiones estables del sistema, listas para utilizarse. En `develop` se van reuniendo las nuevas funcionalidades antes de preparar una versión.
 
 ---
 
 ### 2. ¿Por qué la funcionalidad se desarrolló en una rama `feature` y no directamente en `main`?
 
-Respuesta:
+Respuesta: Permite desarrollar y probar la funcionalidad por separado, sin afectar la versión estable. Cuando está lista y las pruebas pasan, se integra en `develop`
 
 ---
 
 ### 3. ¿Qué hace el comando `git merge --no-ff`?
 
-Respuesta:
+Respuesta: Integra los cambios creando un commit de merge, aunque sea posible hacer fast-forward. Así queda registrado en el historial dónde se unió la funcionalidad con la otra rama.
 
 ---
 
 ### 4. ¿Qué diferencia habría si Git hiciera un merge con fast-forward?
 
-Respuesta:
+Respuesta: Con fast-forward, Git mueve el apuntador de la rama hasta el último commit de la funcionalidad, sin crear un commit de merge. El historial queda lineal y no muestra explicitamente donde se integró esa rama.
 
 ---
 
 ### 5. Después del merge, ¿los commits hechos en `feature/descuento-estudiante` quedan en el historial de `develop`?
 
-Respuesta:
+Respuesta: Sí, los commits quedan en el historial de `develop` después del merge. Eliminar la rama `feature/descuento-estudiante` solo elimina su referencia; los cambios y commits integrados se conservan.
 
 ---
 
 ### 6. ¿Qué rol cumple una rama `release`?
 
-Respuesta:
+Respuesta: Sirve para preparar una versión antes de publicarla en `main`. En ella se hacen los últimos ajustes, correcciones y cambios de documentación. Esas correciones también se integran despues en `develop`
 
 ---
 
 ### 7. ¿Es posible usar Integración Continua con Git-flow? Justifica brevemente.
 
-Respuesta:
+Respuesta: Sí, se pueden usar juntos. Por ejemplo, se puede configurar GitHub Actiones para ejecutar las pruebas automáticamente al subir cambios o abrir un pull request. Esto ayuda a detectar errores antes de integrar o publicar una versión
 
 ---
 
